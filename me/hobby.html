@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Created" content="11.2016" />
+		<meta http-equiv="Content-Language" content="en" />
+		<meta name="author" content="Kamila Kosmowska"/>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Caveat|Marck+Script&amp;subset=latin-ext" rel="stylesheet"/> 
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin-ext" rel="stylesheet" />
+		<script>
+			function obrazy()
+			{
+			var obrazy=' ';
+			for(i=1;i<=6;i++)
+			{
+			var plik = "<img src=\"h" + i + ".jpg\" class=\"hobby\" />";
+			obrazy+=plik;
+			}
+			document.getElementById("content").innerHTML=obrazy;
+			}
+			
+		</script>
+		<title> Hobby </title>
+	</head>
+	<body onload="obrazy()">
+		<header>
+			<div class="author"> Kamila Kosmowska </div><div class="contact"> kamilawkosmowska@gmail.com </div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="hobbyp.html"><img src="pl.png" alt="Polski"/></a></li>
+				<li><a href="hobby.html"><img src="uk.png" alt="English"/></a></li>
+				<li><a href="../index.html">About me </a></li>
+				<li><a href="hobby.html"> My hobby </a></li>
+				<li><a href="video.html"> My video </a></li>
+			</ul>
+		</nav>
+		<div class="content" id="content">
+		</div>
+		<footer>
+			Copyright © Kamila Kosmowska. 2016 
+		</footer>
+	</body>
+</html>
